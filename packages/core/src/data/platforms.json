@@ -1,0 +1,22 @@
+[
+  {
+    "name": "github",
+    "regex": "(?:https?:\\/\\/)?(?:www\\.)?github\\.com\\/([a-zA-Z0-9](?:[a-zA-Z0-9]|-(?=[a-zA-Z0-9])){0,38})(?:\\/([a-zA-Z0-9._-]+))?(?:\\/)?",
+    "title": "GitHub",
+    "icon": "lucide:github",
+    "isArray": true
+  },
+  {
+    "name": "githubProfile",
+    "regex": "(?:https?:\\/\\/)?(?:www\\.)?github\\.com\\/([a-zA-Z0-9](?:[a-zA-Z0-9]|-(?=[a-zA-Z0-9])){0,38})(?:\\/)?",
+    "title": "GitHub Profile",
+    "icon": "lucide:github"
+  },
+  {
+    "name": "gitlab",
+    "regex": "(?:https?:\\/\\/)?(?:www\\.)?gitlab\\.com\\/([a-zA-Z0-9](?:[a-zA-Z0-9._-]){0,254}(?:\\/[a-zA-Z0-9._-]+)*)(?:\\/)?",
+    "title": "GitLab",
+    "icon": "simple-icons:gitlab",
+    "isArray": true
+  }
+]
