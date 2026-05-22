@@ -1,0 +1,24 @@
+name: Validate Platforms JSON
+
+on:
+  push:
+    paths:
+      - "packages/core/src/data/platforms.json"
+  pull_request:
+    paths:
+      - "packages/core/src/data/platforms.json"
+
+jobs:
+  validate:
+    name: Validate platforms.json structure
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Validate platforms.json
+        run: node scripts/validate-platforms.js
