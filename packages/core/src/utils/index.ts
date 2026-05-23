@@ -1,1 +1,1 @@
-export { parseUrl, removeTrailingSlash, normalizeHostname } from "./url";
+export { parseUrl, removeTrailingSlash, normalizeHostname, isValidUrl } from "./url";

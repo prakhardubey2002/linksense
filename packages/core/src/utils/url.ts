@@ -21,5 +21,14 @@ export function removeTrailingSlash(path: string): string {
 }
 
 export function normalizeHostname(hostname: string): string {
-  return hostname.replace(/^www\./, "").toLowerCase();
+  return hostname.toLowerCase().replace(/^www\./, "");
+}
+
+export function isValidUrl(url: string): boolean {
+  try {
+    new URL(url);
+    return true;
+  } catch {
+    return false;
+  }
 }

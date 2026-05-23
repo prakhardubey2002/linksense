@@ -1,5 +1,5 @@
 import platforms from "../data/platforms.json";
-import type { DetectResult } from "../types";
+import type { DetectResult, PlatformEntry } from "../types";
 
 export function detect(url: string): DetectResult | null {
   for (const platform of platforms) {
@@ -39,4 +39,18 @@ export function detectAll(url: string): DetectResult[] {
   }
 
   return results;
+}
+
+export function detectBatch(
+  urls: string[],
+): Map<string, DetectResult | null> {
+  const results = new Map<string, DetectResult | null>();
+  for (const url of urls) {
+    results.set(url, detect(url));
+  }
+  return results;
+}
+
+export function getPlatforms(): PlatformEntry[] {
+  return [...platforms];
 }
