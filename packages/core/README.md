@@ -118,6 +118,7 @@ Removes a trailing `/` from a path (preserves root `/`).
 interface DetectResult {
   platform: string;
   title: string;
+  /** Iconify icon id, e.g. `lucide:github` — render with @iconify/iconify or @iconify/react / @iconify/vue */
   icon: string;
   url: string;
   matches: string[];
@@ -143,6 +144,7 @@ interface PlatformEntry {
   name: string;
   regex: string;
   title: string;
+  /** Iconify icon id (`collection:icon-name`) */
   icon: string;
 }
 ```
@@ -150,6 +152,30 @@ interface PlatformEntry {
 ## Supported Platforms
 
 GitHub, LinkedIn, Twitter/X, Instagram, Facebook, Medium, Stack Overflow, Dribbble, Behance, Credly, LeetCode, HackerRank, Codeforces, CodeChef, CodePen, Coursera, Udemy, Udacity, edX, freeCodeCamp, Google Skillshop, AWS Training, Microsoft Learn, NPTEL/SWAYAM, LinkedIn Learning, Educative, GeeksforGeeks, Pluralsight, Scrimba, Frontend Masters, Frontend Mentor, Internshala, Great Learning, UpGrad, Skillsoft, Cisco Netacad, CompTIA, Salesforce, Trailhead, MuleSoft, Workday, HubSpot, Microsoft Dynamics, Zoho, Pipedrive, Oracle, SAP, WordPress, Wappalyzer, Freelancer, Vercel, Netlify, Webflow, Google Drive, OneDrive, CS50, and a generic website catch-all.
+
+## Icons (Iconify)
+
+Each platform’s `icon` field is an **[Iconify](https://iconify.design/)** icon id in `collection:icon-name` form (for example `lucide:github`, `simple-icons:udemy`, `mdi:behance`). These are not Lucide CSS classes or raw SVG paths — many platforms use Lucide, but others use Simple Icons, MDI, Iconoir, and more.
+
+Render them with the **Iconify SVG framework** ([`@iconify/iconify`](https://www.npmjs.com/package/@iconify/iconify)) or the Iconify component for your UI framework (`@iconify/react`, `@iconify/vue`, etc.):
+
+```bash
+npm install @iconify/iconify
+```
+
+```html
+<!-- Vanilla / any HTML -->
+<span class="iconify" data-icon="lucide:github"></span>
+```
+
+```typescript
+import { detect } from "@linksense/core";
+
+const { icon } = detect("https://github.com/user")!;
+// Use `icon` as the Iconify icon name (e.g. pass to data-icon or <Icon icon={icon} />)
+```
+
+See the README for `@linksense/react`, `@linksense/vue`, `@linksense/preact`, and `@linksense/angular` for framework-specific examples.
 
 ## License
 

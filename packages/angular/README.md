@@ -19,9 +19,10 @@ import { LinkSenseService } from "@linksense/angular";
 @Component({
   selector: "app-link-card",
   template: `
-    @if (isDetected) {
-      <span>{{ result?.title }}</span>
-      <a [href]="url">{{ result?.platform }}</a>
+    @if (isDetected && result) {
+      <span>{{ result.title }}</span>
+      <span class="iconify" [attr.data-icon]="result.icon"></span>
+      <a [href]="url">{{ result.platform }}</a>
     }
   `,
 })
@@ -55,6 +56,27 @@ export class LinkCardComponent {
 | `isValidUrl(url)` | Boolean URL check |
 
 `providedIn: 'root'` — register once, inject anywhere.
+
+## Icons (Iconify)
+
+`result.icon` values are **Iconify** ids (`lucide:github`, `simple-icons:udemy`, etc.), not Lucide CSS classes. Use the Iconify SVG framework [`@iconify/iconify`](https://www.npmjs.com/package/@iconify/iconify):
+
+```bash
+npm install @iconify/iconify
+```
+
+In `angular.json` or `index.html`, load Iconify once, then bind `data-icon` in templates:
+
+```html
+<span class="iconify" [attr.data-icon]="result?.icon"></span>
+```
+
+```typescript
+// main.ts (bundled apps)
+import "@iconify/iconify";
+```
+
+See [Iconify SVG framework](https://iconify.design/docs/icon-components/svg-framework/) for setup details.
 
 ## Direct core access
 

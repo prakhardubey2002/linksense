@@ -16,6 +16,7 @@ Accepts a string or `Ref<string | null | undefined>`. Returns **computed refs** 
 
 ```vue
 <script setup lang="ts">
+import { Icon } from "@iconify/vue";
 import { ref } from "vue";
 import { useLinkSense } from "@linksense/vue";
 
@@ -24,8 +25,9 @@ const { result, isDetected, platform } = useLinkSense(url);
 </script>
 
 <template>
-  <div v-if="isDetected">
-    <span>{{ result?.title }}</span>
+  <div v-if="isDetected && result">
+    <span>{{ result.title }}</span>
+    <Icon :icon="result.icon" width="24" height="24" />
     <a :href="url">{{ platform }}</a>
   </div>
 </template>
@@ -63,6 +65,24 @@ const normalized = useNormalizeUrl(url);
 ```ts
 const extracted = useExtractFromUrl(url);
 // extracted.value?.username
+```
+
+## Icons (Iconify)
+
+`result.icon` values are **Iconify** ids (`lucide:github`, `mdi:behance`, etc.). Install [`@iconify/vue`](https://www.npmjs.com/package/@iconify/vue):
+
+```bash
+npm install @iconify/vue
+```
+
+```vue
+<script setup lang="ts">
+import { Icon } from "@iconify/vue";
+</script>
+
+<template>
+  <Icon :icon="result.icon" width="24" height="24" />
+</template>
 ```
 
 ## Direct core access

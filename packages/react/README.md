@@ -22,17 +22,18 @@ yarn add @linksense/react react
 The main hook — detects which platform a URL belongs to.
 
 ```tsx
+import { Icon } from "@iconify/react";
 import { useLinkSense } from "@linksense/react";
 
 function LinkCard({ url }: { url: string }) {
   const { result, isDetected, platform } = useLinkSense(url);
 
-  if (!isDetected) return <p>Unknown link</p>;
+  if (!isDetected || !result) return <p>Unknown link</p>;
 
   return (
     <div>
-      <span>{result!.title}</span>
-      <span>{result!.icon}</span>
+      <span>{result.title}</span>
+      <Icon icon={result.icon} />
       <a href={url}>{platform}</a>
     </div>
   );
@@ -120,6 +121,22 @@ function UserInfo({ url }: { url: string }) {
   );
 }
 ```
+
+## Icons (Iconify)
+
+`result.icon` (and `PlatformEntry.icon`) are **Iconify** ids such as `lucide:github` or `simple-icons:udemy` — not Lucide CSS classes. Install [`@iconify/react`](https://www.npmjs.com/package/@iconify/react) and pass the string to `<Icon icon={...} />`:
+
+```bash
+npm install @iconify/react
+```
+
+```tsx
+import { Icon } from "@iconify/react";
+
+<Icon icon={result.icon} width={24} height={24} />
+```
+
+For non-React apps, use the Iconify SVG framework: [`@iconify/iconify`](https://www.npmjs.com/package/@iconify/iconify).
 
 ## Direct Core Access
 
