@@ -3,7 +3,6 @@ export interface PlatformEntry {
   regex: string;
   title: string;
   icon: string;
-  isArray?: boolean;
 }
 
 export interface DetectResult {
@@ -12,7 +11,7 @@ export interface DetectResult {
   icon: string;
   url: string;
   matches: string[];
-  isArray: boolean;
+
 }
 
 export interface NormalizedUrl {

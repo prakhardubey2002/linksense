@@ -24,10 +24,6 @@ function validate() {
     process.exit(1);
   }
 
-  if (!Array.isArray(platforms)) {
-    console.error("❌ platforms.json must be an array");
-    process.exit(1);
-  }
 
   const names = new Set();
 
@@ -42,10 +38,6 @@ function validate() {
       }
     }
 
-    if (entry.isArray !== undefined && typeof entry.isArray !== "boolean") {
-      console.error(`❌ ${prefix}: "isArray" must be a boolean if provided`);
-      process.exit(1);
-    }
 
     try {
       new RegExp(entry.regex);

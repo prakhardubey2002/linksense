@@ -13,7 +13,6 @@ export function detect(url: string): DetectResult | null {
         icon: platform.icon,
         url,
         matches: match.slice(1).filter(Boolean),
-        isArray: platform.isArray ?? false,
       };
     }
   }
@@ -35,7 +34,6 @@ export function detectAll(url: string): DetectResult[] {
         icon: platform.icon,
         url,
         matches: match.slice(1).filter(Boolean),
-        isArray: platform.isArray ?? false,
       });
     }
   }
