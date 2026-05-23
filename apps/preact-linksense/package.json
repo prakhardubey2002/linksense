@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@iconify/react": "^5.2.0",
+    "@linksense/core": "workspace:*",
     "@linksense/preact": "workspace:*",
     "preact": "^10.29.1"
   },

@@ -19,8 +19,8 @@ function App() {
       <header className="playground-header">
         <h1>LinkSense Playground</h1>
         <p>
-          Module Federation host — one page, all framework demos. Remotes: React
-          (5173), Preact (5174), Vue (5175).
+          One host, three remotes — switch tabs to compare React, Preact, and Vue
+          demos side by side.
         </p>
       </header>
 

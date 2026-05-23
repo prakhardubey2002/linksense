@@ -1,0 +1,300 @@
+/* Shared demo styles — set data-framework on .demo-shell: react | preact | vue */
+
+.demo-shell {
+  --demo-bg: #f4f6fb;
+  --demo-surface: #ffffff;
+  --demo-border: #e2e8f0;
+  --demo-text: #0f172a;
+  --demo-muted: #64748b;
+  --demo-accent: #2563eb;
+  --demo-accent-soft: #dbeafe;
+  --demo-accent-text: #1d4ed8;
+  --demo-shadow: 0 1px 2px rgb(15 23 42 / 6%), 0 8px 24px rgb(15 23 42 / 6%);
+  --demo-radius: 14px;
+  --demo-font: "Segoe UI", system-ui, -apple-system, sans-serif;
+  --demo-mono: ui-monospace, "Cascadia Code", "SF Mono", Consolas, monospace;
+
+  min-height: 100vh;
+  padding: 1.5rem 1rem 2.5rem;
+  font-family: var(--demo-font);
+  color: var(--demo-text);
+  background:
+    radial-gradient(ellipse 80% 50% at 50% -20%, var(--demo-accent-soft), transparent),
+    var(--demo-bg);
+}
+
+.demo-shell[data-framework="react"] {
+  --demo-accent: #087ea4;
+  --demo-accent-soft: #e0f7fa;
+  --demo-accent-text: #0e7490;
+}
+
+.demo-shell[data-framework="preact"] {
+  --demo-accent: #673ab8;
+  --demo-accent-soft: #ede9fe;
+  --demo-accent-text: #5b21b6;
+}
+
+.demo-shell[data-framework="vue"] {
+  --demo-accent: #42b883;
+  --demo-accent-soft: #d1fae5;
+  --demo-accent-text: #047857;
+}
+
+.demo-inner {
+  max-width: 56rem;
+  margin: 0 auto;
+}
+
+.demo-hero {
+  text-align: center;
+  margin-bottom: 1.75rem;
+}
+
+.demo-pill {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  padding: 0.3rem 0.65rem;
+  border-radius: 999px;
+  background: var(--demo-accent-soft);
+  color: var(--demo-accent-text);
+  margin-bottom: 0.65rem;
+}
+
+.demo-hero h1 {
+  margin: 0 0 0.35rem;
+  font-size: clamp(1.5rem, 4vw, 1.85rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.demo-hero p {
+  margin: 0;
+  color: var(--demo-muted);
+  font-size: 0.95rem;
+  line-height: 1.5;
+  max-width: 28rem;
+  margin-inline: auto;
+}
+
+.demo-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .demo-grid {
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+  }
+}
+
+.demo-panel {
+  background: var(--demo-surface);
+  border: 1px solid var(--demo-border);
+  border-radius: var(--demo-radius);
+  box-shadow: var(--demo-shadow);
+  padding: 1.15rem 1.25rem;
+}
+
+.demo-panel h2 {
+  margin: 0 0 0.85rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--demo-muted);
+}
+
+.demo-label {
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--demo-muted);
+  margin-bottom: 0.35rem;
+}
+
+.demo-input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.65rem 0.8rem;
+  border: 1px solid var(--demo-border);
+  border-radius: 10px;
+  font-size: 0.88rem;
+  margin-bottom: 0.75rem;
+  background: #fafbfc;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.demo-input:focus {
+  outline: none;
+  border-color: var(--demo-accent);
+  box-shadow: 0 0 0 3px var(--demo-accent-soft);
+}
+
+.demo-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-bottom: 1rem;
+}
+
+.demo-chip {
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 0.35rem 0.7rem;
+  border: 1px solid var(--demo-border);
+  border-radius: 999px;
+  background: #f8fafc;
+  color: var(--demo-text);
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s, color 0.15s;
+}
+
+.demo-chip:hover {
+  border-color: var(--demo-accent);
+  background: var(--demo-accent-soft);
+}
+
+.demo-chip.is-active {
+  background: var(--demo-accent);
+  border-color: var(--demo-accent);
+  color: #fff;
+}
+
+.demo-result {
+  border-radius: 12px;
+  padding: 1rem;
+  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+  border: 1px solid var(--demo-border);
+}
+
+.demo-result.is-empty {
+  color: var(--demo-muted);
+  font-size: 0.88rem;
+  text-align: center;
+  padding: 1.5rem 1rem;
+}
+
+.demo-result-head {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+.demo-result-head .icon-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 12px;
+  background: var(--demo-surface);
+  border: 1px solid var(--demo-border);
+  box-shadow: 0 1px 2px rgb(15 23 42 / 5%);
+}
+
+.demo-result-meta {
+  flex: 1;
+  min-width: 0;
+}
+
+.demo-platform-tag {
+  display: inline-block;
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.15rem 0.45rem;
+  border-radius: 6px;
+  background: var(--demo-accent-soft);
+  color: var(--demo-accent-text);
+  margin-bottom: 0.2rem;
+}
+
+.demo-result-title {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.demo-result-url {
+  font-size: 0.75rem;
+  color: var(--demo-muted);
+  margin: 0.2rem 0 0;
+  word-break: break-all;
+}
+
+.demo-details {
+  margin-top: 0.85rem;
+  padding-top: 0.85rem;
+  border-top: 1px dashed var(--demo-border);
+  display: grid;
+  gap: 0.5rem;
+}
+
+.demo-detail-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 0.5rem;
+  font-size: 0.78rem;
+}
+
+.demo-detail-row dt {
+  font-weight: 600;
+  color: var(--demo-muted);
+  margin: 0;
+}
+
+.demo-detail-row dd {
+  margin: 0;
+  color: var(--demo-text);
+  font-family: var(--demo-mono);
+  font-size: 0.76rem;
+}
+
+.demo-code-wrap {
+  position: relative;
+}
+
+.demo-code-wrap pre {
+  margin: 0;
+  padding: 0.9rem 1rem;
+  border-radius: 10px;
+  background: #0f172a;
+  color: #e2e8f0;
+  font-family: var(--demo-mono);
+  font-size: 0.68rem;
+  line-height: 1.55;
+  overflow-x: auto;
+  white-space: pre;
+}
+
+.demo-code-wrap .demo-code-lang {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.55rem;
+  font-size: 0.62rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #94a3b8;
+}
+
+.demo-hint {
+  margin: 0.75rem 0 0;
+  font-size: 0.75rem;
+  color: var(--demo-muted);
+  line-height: 1.45;
+}
+
+.demo-hint code {
+  font-family: var(--demo-mono);
+  font-size: 0.7rem;
+  background: #f1f5f9;
+  padding: 0.1rem 0.3rem;
+  border-radius: 4px;
+}

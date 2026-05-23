@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@iconify/react": "^5.2.0",
+    "@linksense/core": "workspace:*",
     "@linksense/react": "workspace:*",
     "react": "^19.2.6",
     "react-dom": "^19.2.6"

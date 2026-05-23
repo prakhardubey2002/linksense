@@ -47,6 +47,9 @@ importers:
       '@iconify/react':
         specifier: ^5.2.0
         version: 5.2.1(react@19.2.6)
+      '@linksense/core':
+        specifier: workspace:*
+        version: link:../../packages/core
       '@linksense/react':
         specifier: workspace:*
         version: link:../../packages/react
@@ -127,6 +130,9 @@ importers:
       '@iconify/react':
         specifier: ^5.2.0
         version: 5.2.1(react@19.2.6)
+      '@linksense/core':
+        specifier: workspace:*
+        version: link:../../packages/core
       '@linksense/preact':
         specifier: workspace:*
         version: link:../../packages/preact
@@ -152,6 +158,9 @@ importers:
       '@iconify/vue':
         specifier: ^4.3.0
         version: 4.3.0(vue@3.5.34(typescript@5.9.3))
+      '@linksense/core':
+        specifier: workspace:*
+        version: link:../../packages/core
       '@linksense/vue':
         specifier: workspace:*
         version: link:../../packages/vue
@@ -3406,10 +3415,10 @@ snapshots:
     dependencies:
       csstype: 3.2.3
 
-  '@typescript-eslint/eslint-plugin@8.59.4(@typescript-eslint/parser@8.59.4(eslint@9.39.4)(typescript@5.9.3))(eslint@10.4.0)(typescript@5.9.3)':
+  '@typescript-eslint/eslint-plugin@8.59.4(@typescript-eslint/parser@8.59.4(eslint@10.4.0)(typescript@5.9.3))(eslint@10.4.0)(typescript@5.9.3)':
     dependencies:
       '@eslint-community/regexpp': 4.12.2
-      '@typescript-eslint/parser': 8.59.4(eslint@9.39.4)(typescript@5.9.3)
+      '@typescript-eslint/parser': 8.59.4(eslint@10.4.0)(typescript@5.9.3)
       '@typescript-eslint/scope-manager': 8.59.4
       '@typescript-eslint/type-utils': 8.59.4(eslint@10.4.0)(typescript@5.9.3)
       '@typescript-eslint/utils': 8.59.4(eslint@10.4.0)(typescript@5.9.3)
@@ -4743,7 +4752,7 @@ snapshots:
 
   typescript-eslint@8.59.4(eslint@10.4.0)(typescript@5.9.3):
     dependencies:
-      '@typescript-eslint/eslint-plugin': 8.59.4(@typescript-eslint/parser@8.59.4(eslint@9.39.4)(typescript@5.9.3))(eslint@10.4.0)(typescript@5.9.3)
+      '@typescript-eslint/eslint-plugin': 8.59.4(@typescript-eslint/parser@8.59.4(eslint@10.4.0)(typescript@5.9.3))(eslint@10.4.0)(typescript@5.9.3)
       '@typescript-eslint/parser': 8.59.4(eslint@10.4.0)(typescript@5.9.3)
       '@typescript-eslint/typescript-estree': 8.59.4(typescript@5.9.3)
       '@typescript-eslint/utils': 8.59.4(eslint@10.4.0)(typescript@5.9.3)
