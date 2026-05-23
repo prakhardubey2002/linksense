@@ -1,7 +1,7 @@
 {
   "name": "@linksense/react",
   "version": "0.0.1",
-  "description": "React hooks for linksense link/platform detection",
+  "description": "React hooks for URL platform detection — useLinkSense, useDetectAll, useNormalizeUrl, useExtractFromUrl",
   "type": "module",
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
@@ -18,9 +18,7 @@
       }
     }
   },
-  "files": [
-    "dist"
-  ],
+  "files": ["dist", "LICENSE", "README.md"],
   "scripts": {
     "build": "tsup",
     "dev": "tsup --watch",
@@ -35,6 +33,27 @@
   },
   "sideEffects": false,
   "license": "MIT",
+  "author": "Prakhar Dubey <prakhardubey2002>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/prakhardubey2002/linksense.git",
+    "directory": "packages/react"
+  },
+  "homepage": "https://github.com/prakhardubey2002/linksense/tree/main/packages/react#readme",
+  "bugs": "https://github.com/prakhardubey2002/linksense/issues",
+  "keywords": [
+    "react",
+    "hooks",
+    "url",
+    "link",
+    "platform",
+    "detection",
+    "social-media",
+    "linksense"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
   "devDependencies": {
     "@types/react": "^19.2.15"
   }
