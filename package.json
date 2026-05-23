@@ -2,6 +2,15 @@
   "name": "linksense",
   "private": true,
   "type": "module",
+  "description": "URL platform detection and normalization toolkit",
+  "author": "Prakhar Dubey <prakhardubey2002>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/prakhardubey2002/linksense.git"
+  },
+  "homepage": "https://github.com/prakhardubey2002/linksense#readme",
+  "bugs": "https://github.com/prakhardubey2002/linksense/issues",
   "scripts": {
     "build": "turbo run build",
     "dev": "turbo run dev",
