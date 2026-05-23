@@ -3,8 +3,7 @@
     "name": "github",
     "regex": "(?:https?:\\/\\/)?(?:www\\.)?github\\.com\\/([a-zA-Z0-9](?:[a-zA-Z0-9]|-(?=[a-zA-Z0-9])){0,38})(?:\\/([a-zA-Z0-9._-]+))?(?:\\/)?",
     "title": "GitHub",
-    "icon": "lucide:github",
-    "isArray": true
+    "icon": "lucide:github"
   },
   {
     "name": "githubProfile",
@@ -13,10 +12,345 @@
     "icon": "lucide:github"
   },
   {
-    "name": "gitlab",
-    "regex": "(?:https?:\\/\\/)?(?:www\\.)?gitlab\\.com\\/([a-zA-Z0-9](?:[a-zA-Z0-9._-]){0,254}(?:\\/[a-zA-Z0-9._-]+)*)(?:\\/)?",
-    "title": "GitLab",
-    "icon": "simple-icons:gitlab",
-    "isArray": true
+    "name": "dribbble",
+    "regex": "(?:https?:\\/\\/)?(?:www\\.)?dribbble\\.com\\/([a-zA-Z0-9_-]+)(?:\\/)?",
+    "title": "Dribbble",
+    "icon": "lucide:dribbble"
+  },
+  {
+    "name": "behance",
+    "regex": "(?:https?:\\/\\/)?(?:www\\.)?behance\\.net\\/([a-zA-Z0-9_-]+)(?:\\/)?",
+    "title": "Behance",
+    "icon": "mdi:behance"
+  },
+  {
+    "name": "linkedin",
+    "regex": "(?:https?:\\/\\/)?(?:www\\.)?linkedin\\.com\\/(?:in|company|pub|school)\\/([a-zA-Z0-9_-]+)(?:\\/)?",
+    "title": "LinkedIn",
+    "icon": "lucide:linkedin"
+  },
+  {
+    "name": "twitter",
+    "regex": "(?:https?:\\/\\/)?(?:www\\.)?(?:twitter\\.com|x\\.com)\\/([a-zA-Z0-9_]+)(?:\\/)?",
+    "title": "Twitter / X",
+    "icon": "lucide:twitter"
+  },
+  {
+    "name": "instagram",
+    "regex": "(?:https?:\\/\\/)?(?:www\\.)?instagram\\.com\\/([a-zA-Z0-9_.]+)(?:\\/)?",
+    "title": "Instagram",
+    "icon": "lucide:instagram"
+  },
+  {
+    "name": "facebook",
+    "regex": "(?:https?:\\/\\/)?(?:www\\.)?facebook\\.com\\/([a-zA-Z0-9.]+)(?:\\/)?",
+    "title": "Facebook",
+    "icon": "lucide:facebook"
+  },
+  {
+    "name": "medium",
+    "regex": "(?:https?:\\/\\/)?(?:www\\.)?medium\\.com\\/(?:@)?([a-zA-Z0-9_-]+)(?:\\/)?",
+    "title": "Medium",
+    "icon": "streamline-logos:medium-logo-2-solid"
+  },
+  {
+    "name": "stackoverflow",
+    "regex": "(?:https?:\\/\\/)?(?:www\\.)?stackoverflow\\.com\\/(?:users|u)\\/([0-9]+)\\/([a-zA-Z0-9_-]+)(?:\\/)?",
+    "title": "Stack Overflow",
+    "icon": "iconoir:stackoverflow"
+  },
+  {
+    "name": "credly",
+    "regex": "(?:https?:\\/\\/)?(?:www\\.)?credly\\.com\\/(?:users|u|badges|organizations)\\/([a-zA-Z0-9_-]+)(?:\\/[a-zA-Z0-9_-]+)*(?:\\?[^\\s]*)?(?:\\s|$)",
+    "title": "Credly",
+    "icon": "simple-icons:credly"
+  },
+  {
+    "name": "skillsoft",
+    "regex": "(?:https?:\\/\\/)?(?:www\\.)?(?:skillsoft\\.digitalbadges\\.skillsoft\\.com|skillsoft\\.com|skillsoft\\.global)\\/(?:[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}|badges|certifications|earn|learn|users|profile|[a-zA-Z0-9_-]+)(?:\\/[a-zA-Z0-9_-]+)*(?:\\/)?",
+    "title": "Skillsoft",
+    "icon": "lucide:graduation-cap"
+  },
+  {
+    "name": "udemy",
+    "regex": "(?:https?:\\/\\/)?(?:www\\.)?udemy\\.com\\/(?:user|course|certificate)\\/([a-zA-Z0-9_-]+)(?:\\/[a-zA-Z0-9_-]+)*(?:\\/)?",
+    "title": "Udemy",
+    "icon": "simple-icons:udemy"
+  },
+  {
+    "name": "udacity",
+    "regex": "(?:https?:\\/\\/)?(?:www\\.)?(?:[a-zA-Z0-9-]+\\.)?udacity\\.com\\/(?:course|graduated|certificate|confirm)\\/([a-zA-Z0-9_-]+)(?:\\/[a-zA-Z0-9_-]+)*(?:\\?[^\\s]*)?(?:\\s|$)",
+    "title": "Udacity",
+    "icon": "cib:udacity"
+  },
+  {
+    "name": "coursera",
+    "regex": "(?:https?:\\/\\/)?(?:www\\.)?coursera\\.org\\/(?:learn|user|certificate)\\/([a-zA-Z0-9_-]+)(?:\\/[a-zA-Z0-9_-]+)*(?:\\/)?",
+    "title": "Coursera",
+    "icon": "simple-icons:coursera"
+  },
+  {
+    "name": "edx",
+    "regex": "(?:https?:\\/\\/)?(?:www\\.)?edx\\.org\\/(?:course|certificates|profiles)\\/([a-zA-Z0-9_-]+)(?:\\/[a-zA-Z0-9_-]+)*(?:\\/)?",
+    "title": "edX",
+    "icon": "simple-icons:edx"
+  },
+  {
+    "name": "googleSkillshop",
+    "regex": "(?:https?:\\/\\/)?(?:www\\.)?(?:skillshop\\.withgoogle\\.com|grow\\.google|careers\\.google\\.com|cloud\\.google\\.com\\/learn\\/certification)(?:\\/[a-zA-Z0-9_-]+)*(?:\\/)?",
+    "title": "Google Skillshop",
+    "icon": "lucide:chrome"
+  },
+  {
+    "name": "awsTraining",
+    "regex": "(?:https?:\\/\\/)?(?:www\\.)?aws\\.amazon\\.com\\/(?:training|certification)(?:\\/[a-zA-Z0-9_-]+)*(?:\\/)?",
+    "title": "AWS Training",
+    "icon": "lucide:cloud"
+  },
+  {
+    "name": "microsoftLearn",
+    "regex": "(?:https?:\\/\\/)?(?:www\\.)?learn\\.microsoft\\.com\\/(?:en-us|users)\\/([a-zA-Z0-9_-]+)(?:\\/[a-zA-Z0-9_-]+)*(?:\\/)?",
+    "title": "Microsoft Learn",
+    "icon": "mdi:microsoft"
+  },
+  {
+    "name": "nptel",
+    "regex": "(?:https?:\\/\\/)?(?:www\\.)?(?:nptel\\.ac\\.in|swayam\\.gov\\.in)\\/(?:courses|course)\\/([a-zA-Z0-9_-]+)(?:\\/[a-zA-Z0-9_-]+)*(?:\\/)?",
+    "title": "NPTEL / SWAYAM",
+    "icon": "emojione-monotone:wheel-of-dharma"
+  },
+  {
+    "name": "linkedinLearning",
+    "regex": "(?:https?:\\/\\/)?(?:www\\.)?linkedin\\.com\\/(?:learning|learning\\/learning-)([a-zA-Z0-9_-]+)(?:\\/[a-zA-Z0-9_-]+)*(?:\\/)?",
+    "title": "LinkedIn Learning",
+    "icon": "lucide:linkedin"
+  },
+  {
+    "name": "freeCodeCamp",
+    "regex": "(?:https?:\\/\\/)?(?:www\\.)?freecodecamp\\.org\\/(?:learn|certification|[a-zA-Z0-9_-]+)(?:\\/[a-zA-Z0-9_-]+)*(?:\\/)?",
+    "title": "freeCodeCamp",
+    "icon": "simple-icons:freecodecamp"
+  },
+  {
+    "name": "hackerrank",
+    "regex": "(?:https?:\\/\\/)?(?:www\\.)?hackerrank\\.com\\/([a-zA-Z0-9_-]+)(?:\\/)?",
+    "title": "HackerRank",
+    "icon": "cib:hackerrank"
+  },
+  {
+    "name": "leetcode",
+    "regex": "(?:https?:\\/\\/)?(?:www\\.)?leetcode\\.com\\/(?:u|profile)\\/([a-zA-Z0-9_-]+)(?:\\/)?",
+    "title": "LeetCode",
+    "icon": "tabler:brand-leetcode"
+  },
+  {
+    "name": "codeforces",
+    "regex": "(?:https?:\\/\\/)?(?:www\\.)?codeforces\\.com\\/(?:profile|users)\\/([a-zA-Z0-9_-]+)(?:\\/)?",
+    "title": "Codeforces",
+    "icon": "simple-icons:codeforces"
+  },
+  {
+    "name": "codechef",
+    "regex": "(?:https?:\\/\\/)?(?:www\\.)?codechef\\.com\\/(?:users|certificates)\\/([a-zA-Z0-9_-]+)(?:\\/)?",
+    "title": "CodeChef",
+    "icon": "simple-icons:codechef"
+  },
+  {
+    "name": "internshala",
+    "regex": "(?:https?:\\/\\/)?(?:www\\.)?internshala\\.com\\/(?:student|training)\\/([a-zA-Z0-9_-]+)(?:\\/[a-zA-Z0-9_-]+)*(?:\\/)?",
+    "title": "Internshala",
+    "icon": "arcticons:internshala"
+  },
+  {
+    "name": "greatLearning",
+    "regex": "(?:https?:\\/\\/)?(?:www\\.)?mygreatlearning\\.com\\/(?:[a-zA-Z0-9_-]+)(?:\\/[a-zA-Z0-9_-]+)*(?:\\/)?",
+    "title": "Great Learning",
+    "icon": "simple-icons:greatlearning"
+  },
+  {
+    "name": "upgrad",
+    "regex": "(?:https?:\\/\\/)?(?:www\\.)?upgrad\\.com\\/(?:[a-zA-Z0-9_-]+)(?:\\/[a-zA-Z0-9_-]+)*(?:\\/)?",
+    "title": "UpGrad",
+    "icon": "lucide:graduation-cap"
+  },
+  {
+    "name": "educative",
+    "regex": "(?:https?:\\/\\/)?(?:www\\.)?educative\\.io\\/(?:learn|profile|courses)\\/([a-zA-Z0-9_-]+)(?:\\/[a-zA-Z0-9_-]+)*(?:\\/)?",
+    "title": "Educative.io",
+    "icon": "simple-icons:educative"
+  },
+  {
+    "name": "geeksforgeeks",
+    "regex": "(?:https?:\\/\\/)?(?:www\\.)?geeksforgeeks\\.org\\/(?:user|courses|certificates)\\/([a-zA-Z0-9_-]+)(?:\\/[a-zA-Z0-9_-]+)*(?:\\/)?",
+    "title": "GeeksforGeeks",
+    "icon": "arcticons:geeksforgeeks"
+  },
+  {
+    "name": "ciscoNetacad",
+    "regex": "(?:https?:\\/\\/)?(?:www\\.)?netacad\\.com\\/(?:portal|course|profile)\\/([a-zA-Z0-9_-]+)(?:\\/[a-zA-Z0-9_-]+)*(?:\\/)?",
+    "title": "Cisco Networking Academy",
+    "icon": "lineicons:cisco"
+  },
+  {
+    "name": "comptia",
+    "regex": "(?:https?:\\/\\/)?(?:www\\.)?comptia\\.org\\/(?:certifications|training|verify-certification)\\/([a-zA-Z0-9_-]+)(?:\\/[a-zA-Z0-9_-]+)*(?:\\/)?",
+    "title": "CompTIA",
+    "icon": "simple-icons:comptia"
+  },
+  {
+    "name": "pluralsight",
+    "regex": "(?:https?:\\/\\/)?(?:www\\.)?pluralsight\\.com\\/(?:profile|paths|courses)\\/([a-zA-Z0-9_-]+)(?:\\/[a-zA-Z0-9_-]+)*(?:\\/)?",
+    "title": "Pluralsight",
+    "icon": "simple-icons:pluralsight"
+  },
+  {
+    "name": "scrimba",
+    "regex": "(?:https?:\\/\\/)?(?:www\\.)?scrimba\\.com\\/(?:learn|profile)\\/([a-zA-Z0-9_-]+)(?:\\/[a-zA-Z0-9_-]+)*(?:\\/)?",
+    "title": "Scrimba",
+    "icon": "simple-icons:scrimba"
+  },
+  {
+    "name": "frontendMasters",
+    "regex": "(?:https?:\\/\\/)?(?:www\\.)?frontendmasters\\.com\\/(?:learn|profile|courses)\\/([a-zA-Z0-9_-]+)(?:\\/[a-zA-Z0-9_-]+)*(?:\\/)?",
+    "title": "Frontend Masters",
+    "icon": "lucide:code"
+  },
+  {
+    "name": "frontendMentor",
+    "regex": "(?:https?:\\/\\/)?(?:www\\.)?frontendmentor\\.io\\/(?:profile|solutions)\\/([a-zA-Z0-9_-]+)(?:\\/[a-zA-Z0-9_-]+)*(?:\\/)?",
+    "title": "Frontend Mentor",
+    "icon": "simple-icons:frontendmentor"
+  },
+  {
+    "name": "codepen",
+    "regex": "(?:https?:\\/\\/)?(?:www\\.)?codepen\\.io\\/([a-zA-Z0-9_-]+)(?:\\/[a-zA-Z0-9_-]+)*(?:\\/)?",
+    "title": "CodePen",
+    "icon": "mdi:codepen"
+  },
+  {
+    "name": "wordpress",
+    "regex": "(?:https?:\\/\\/)?(?:www\\.)?([a-zA-Z0-9_-]+\\.wordpress\\.com|wordpress\\.com\\/profiles\\/[a-zA-Z0-9_-]+)(?:\\/[a-zA-Z0-9_-]+)*(?:\\/)?",
+    "title": "WordPress",
+    "icon": "ic:twotone-wordpress"
+  },
+  {
+    "name": "wappalyzer",
+    "regex": "(?:https?:\\/\\/)?(?:www\\.)?wappalyzer\\.com\\/(?:profiles|profile|technologies)\\/([a-zA-Z0-9_-]+(?:\\/[a-zA-Z0-9_-]+)*)(?:\\/)?",
+    "title": "Wappalyzer",
+    "icon": "simple-icons:wappalyzer"
+  },
+  {
+    "name": "freelancer",
+    "regex": "(?:https?:\\/\\/)?(?:www\\.)?freelancer\\.com\\/(?:u|users|projects)\\/([a-zA-Z0-9_-]+)(?:\\/[a-zA-Z0-9_-]+)*(?:\\/)?",
+    "title": "Freelancer.com",
+    "icon": "simple-icons:freelancer"
+  },
+  {
+    "name": "vercel",
+    "regex": "(?:https?:\\/\\/)?(?:www\\.)?([a-zA-Z0-9-]+\\.vercel\\.app)(?:\\/)?",
+    "title": "Vercel",
+    "icon": "material-icon-theme:vercel"
+  },
+  {
+    "name": "netlify",
+    "regex": "(?:https?:\\/\\/)?(?:www\\.)?([a-zA-Z0-9-]+\\.netlify\\.app)(?:\\/)?",
+    "title": "Netlify",
+    "icon": "bx:bxl-netlify"
+  },
+  {
+    "name": "webflow",
+    "regex": "(?:https?:\\/\\/)?(?:www\\.)?([a-zA-Z0-9-]+\\.webflow\\.io)(?:\\/)?",
+    "title": "Webflow",
+    "icon": "lineicons:webflow"
+  },
+  {
+    "name": "gdrive",
+    "regex": "(?:https?:\\/\\/)?(?:www\\.)?drive\\.google\\.com\\/(?:file|folder|drive|open)\\/(?:d\\/)?([a-zA-Z0-9_-]+)(?:\\/[a-zA-Z0-9_-]+)*(?:\\?[^\\s]*)?(?:\\s|$)",
+    "title": "Google Drive",
+    "icon": "simple-icons:googledrive"
+  },
+  {
+    "name": "onedrive",
+    "regex": "(?:https?:\\/\\/)?(?:www\\.)?(?:onedrive\\.live\\.com|1drv\\.ms|onedrive\\.com)\\/(?:.*\\?id=|.*\\/)([a-zA-Z0-9%_-]+)(?:\\/.*)?(?:\\/)?",
+    "title": "Microsoft OneDrive",
+    "icon": "mdi:microsoft-onedrive"
+  },
+  {
+    "name": "cs50",
+    "regex": "(?:https?:\\/\\/)?(?:www\\.)?certificates\\.cs50\\.io\\/([a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12})(?:\\.pdf)?(?:\\?.*)?(?:\\/)?",
+    "title": "Harvard CS50 Certificate",
+    "icon": "map:sheild"
+  },
+  {
+    "name": "salesforce",
+    "regex": "(?:https?:\\/\\/)?(?:www\\.)?(?:certification\\.)?salesforce\\.com\\/(?:certification|credentials|verification|cert)(?:\\/[a-zA-Z0-9_-]+)*(?:\\/)?",
+    "title": "Salesforce Certification",
+    "icon": "simple-icons:salesforce"
+  },
+  {
+    "name": "trailhead",
+    "regex": "(?:https?:\\/\\/)?(?:www\\.)?trailhead\\.salesforce\\.com\\/(?:users|trailblazer|trailmixes|modules|projects|superbadges|badges|credentials)\\/([a-zA-Z0-9_-]+)(?:\\/[a-zA-Z0-9_-]+)*(?:\\/)?",
+    "title": "Salesforce Trailhead",
+    "icon": "simple-icons:salesforce"
+  },
+  {
+    "name": "mulesoft",
+    "regex": "(?:https?:\\/\\/)?(?:www\\.)?mulesoft\\.com\\/(?:certification|training|learn|credentials)(?:\\/[a-zA-Z0-9_-]+)*(?:\\/)?",
+    "title": "MuleSoft Certification",
+    "icon": "simple-icons:mulesoft"
+  },
+  {
+    "name": "workday",
+    "regex": "(?:https?:\\/\\/)?(?:www\\.)?workday\\.com\\/(?:certification|training|learn|credentials)(?:\\/[a-zA-Z0-9_-]+)*(?:\\/)?",
+    "title": "Workday Certification",
+    "icon": "arcticons:workday"
+  },
+  {
+    "name": "hubspot",
+    "regex": "(?:https?:\\/\\/)?(?:www\\.)?hubspot\\.com\\/(?:certification|academy|certifications|training)(?:\\/[a-zA-Z0-9_-]+)*(?:\\/)?",
+    "title": "HubSpot Certification",
+    "icon": "simple-icons:hubspot"
+  },
+  {
+    "name": "microsoftDynamics",
+    "regex": "(?:https?:\\/\\/)?(?:www\\.)?(?:dynamics\\.microsoft\\.com|learn\\.microsoft\\.com\\/dynamics|docs\\.microsoft\\.com\\/dynamics)(?:\\/[a-zA-Z0-9_-]+)*(?:\\/)?",
+    "title": "Microsoft Dynamics",
+    "icon": "mdi:microsoft"
+  },
+  {
+    "name": "zoho",
+    "regex": "(?:https?:\\/\\/)?(?:www\\.)?zoho\\.com\\/(?:certification|training|learn|credentials)(?:\\/[a-zA-Z0-9_-]+)*(?:\\/)?",
+    "title": "Zoho Certification",
+    "icon": "simple-icons:zoho"
+  },
+  {
+    "name": "pipedrive",
+    "regex": "(?:https?:\\/\\/)?(?:www\\.)?pipedrive\\.com\\/(?:certification|training|learn|academy)(?:\\/[a-zA-Z0-9_-]+)*(?:\\/)?",
+    "title": "Pipedrive Certification",
+    "icon": "logos:pipedrive"
+  },
+  {
+    "name": "oracle",
+    "regex": "(?:https?:\\/\\/)?(?:www\\.)?oracle\\.com\\/(?:certification|education|training|learn)(?:\\/[a-zA-Z0-9_-]+)*(?:\\/)?",
+    "title": "Oracle Certification",
+    "icon": "simple-icons:oracle"
+  },
+  {
+    "name": "sap",
+    "regex": "(?:https?:\\/\\/)?(?:www\\.)?sap\\.com\\/(?:certification|training|learn|credentials|education)(?:\\/[a-zA-Z0-9_-]+)*(?:\\/)?",
+    "title": "SAP Certification",
+    "icon": "simple-icons:sap"
+  },
+  {
+    "name": "portfolio",
+    "regex": "(?:https?:\\/\\/)?(?:www\\.)?([a-zA-Z0-9-]+\\.(?:me|tech|dev|io|app|site|website|squarespace\\.com|notion\\.site|tilda\\.cc|read\\.cv|hashnode\\.dev|dev\\.to|wixsite\\.com))(?:\\/)?",
+    "title": "Portfolio",
+    "icon": "lucide:globe"
+  },
+  {
+    "name": "website",
+    "regex": "https?:\\/\\/(?:www\\.)?[-a-zA-Z0-9@:%._+~#=]{1,256}\\.[a-zA-Z0-9()]{1,6}\\b(?:[-a-zA-Z0-9()@:%_+.~#?&\\/=]*)",
+    "title": "Website",
+    "icon": "lucide:globe"
   }
 ]
