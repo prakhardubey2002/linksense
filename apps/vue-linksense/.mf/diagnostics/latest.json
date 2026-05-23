@@ -1,10 +1,10 @@
 {
   "latestErrorEvent": {
     "code": "TYPE-001",
-    "message": "Failed to generate type declaration. Execute the below cmd to reproduce and fix the error. #TYPE-001\nargs: {\"cmd\":\"npx tsc --project \\\"C:\\\\\\\\Personal SAAS and Projects\\\\\\\\linksense\\\\\\\\apps\\\\\\\\vue-linksense\\\\\\\\node_modules\\\\\\\\.federation\\\\\\\\tsconfig.58d28a205080b2ac97b266695c218c7f.json\\\"\"}\nView the docs to see how to solve: https://module-federation.io/guide/troubleshooting/type#type-001",
+    "message": "Failed to generate type declaration. Execute the below cmd to reproduce and fix the error. #TYPE-001\nargs: {\"cmd\":\"npx tsc --project \\\"C:\\\\\\\\Personal SAAS and Projects\\\\\\\\linksense\\\\\\\\apps\\\\\\\\vue-linksense\\\\\\\\node_modules\\\\\\\\.federation\\\\\\\\tsconfig.c6d12cf6a3c2af8f73f2a0083ec830b4.json\\\"\"}\nView the docs to see how to solve: https://module-federation.io/guide/troubleshooting/type#type-001",
     "args": {
-      "cmd": "npx tsc --project \"C:\\\\Personal SAAS and Projects\\\\linksense\\\\apps\\\\vue-linksense\\\\node_modules\\\\.federation\\\\tsconfig.58d28a205080b2ac97b266695c218c7f.json\""
+      "cmd": "npx tsc --project \"C:\\\\Personal SAAS and Projects\\\\linksense\\\\apps\\\\vue-linksense\\\\node_modules\\\\.federation\\\\tsconfig.c6d12cf6a3c2af8f73f2a0083ec830b4.json\""
     },
-    "timestamp": 1779533037629
+    "timestamp": 1779533984904
   }
 }

@@ -27,7 +27,9 @@
     "dev:demos": "turbo run dev --filter=linksense-react --filter=preact-linksense --filter=vue-linksense",
     "build:demos": "turbo run build --filter=linksense-react --filter=preact-linksense --filter=vue-linksense",
     "dev:federation": "turbo run dev --filter=playground --filter=linksense-react --filter=preact-linksense --filter=vue-linksense",
-    "build:federation": "pnpm build && turbo run build --filter=playground --filter=linksense-react --filter=preact-linksense --filter=vue-linksense"
+    "build:federation": "node scripts/build-federation.mjs",
+    "stage:federation": "node scripts/stage-federation.mjs",
+    "preview:federation": "node scripts/stage-federation.mjs && pnpm --filter playground preview"
   },
   "devDependencies": {
     "@changesets/cli": "^2.27.0",

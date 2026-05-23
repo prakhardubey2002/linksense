@@ -1,0 +1,6 @@
+{
+  "buildCommand": "pnpm build:federation && pnpm stage:federation",
+  "outputDirectory": "apps/playground/dist",
+  "installCommand": "pnpm install",
+  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
+}

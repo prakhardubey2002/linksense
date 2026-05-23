@@ -2,7 +2,10 @@ import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
 import { federation } from "@module-federation/vite";
 
+const staged = process.env.STAGE_FEDERATION === "1";
+
 export default defineConfig({
+  base: staged ? "/remotes/vue/" : "/",
   plugins: [
     vue(),
     federation({

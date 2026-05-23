@@ -2,7 +2,10 @@ import { defineConfig } from "vite";
 import preact from "@preact/preset-vite";
 import { federation } from "@module-federation/vite";
 
+const staged = process.env.STAGE_FEDERATION === "1";
+
 export default defineConfig({
+  base: staged ? "/remotes/preact/" : "/",
   plugins: [
     preact(),
     federation({
