@@ -1,0 +1,22 @@
+{
+  "name": "preact-linksense",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@iconify/react": "^5.2.0",
+    "@linksense/preact": "workspace:*",
+    "preact": "^10.29.1"
+  },
+  "devDependencies": {
+    "@preact/preset-vite": "^2.10.5",
+    "@types/node": "^24.12.3",
+    "typescript": "~5.9.0",
+    "vite": "^6.2.0"
+  }
+}
