@@ -23,11 +23,16 @@
     "version-packages": "changeset version",
     "release": "turbo run build && changeset publish",
     "publish:core": "pnpm --filter @linksense/core publish --access public",
-    "publish:adapters": "pnpm --filter @linksense/react --filter @linksense/preact --filter @linksense/vue --filter @linksense/angular publish --access public"
+    "publish:adapters": "pnpm --filter @linksense/react --filter @linksense/preact --filter @linksense/vue --filter @linksense/angular publish --access public",
+    "dev:demos": "turbo run dev --filter=linksense-react --filter=preact-linksense --filter=vue-linksense",
+    "build:demos": "turbo run build --filter=linksense-react --filter=preact-linksense --filter=vue-linksense",
+    "dev:federation": "turbo run dev --filter=playground --filter=linksense-react --filter=preact-linksense --filter=vue-linksense",
+    "build:federation": "pnpm build && turbo run build --filter=playground --filter=linksense-react --filter=preact-linksense --filter=vue-linksense"
   },
   "devDependencies": {
     "@changesets/cli": "^2.27.0",
     "@eslint/js": "^9.39.4",
+    "@module-federation/vite": "^1.15.5",
     "eslint": "^9.0.0",
     "husky": "^9.1.7",
     "prettier": "^3.7.0",
