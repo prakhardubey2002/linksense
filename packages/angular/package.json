@@ -1,7 +1,7 @@
 {
   "name": "@linksense/angular",
   "version": "0.0.1",
-  "description": "Angular service for linksense link/platform detection",
+  "description": "Angular service for URL platform detection — LinkSenseService powered by @linksense/core",
   "type": "module",
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
@@ -18,7 +18,7 @@
       }
     }
   },
-  "files": ["dist"],
+  "files": ["dist", "LICENSE", "README.md"],
   "scripts": {
     "build": "tsup",
     "dev": "tsup --watch",
@@ -32,5 +32,26 @@
     "@angular/core": ">=16.0.0"
   },
   "sideEffects": false,
-  "license": "MIT"
+  "license": "MIT",
+  "author": "Prakhar Dubey <prakhardubey2002>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/prakhardubey2002/linksense.git",
+    "directory": "packages/angular"
+  },
+  "homepage": "https://github.com/prakhardubey2002/linksense/tree/main/packages/angular#readme",
+  "bugs": "https://github.com/prakhardubey2002/linksense/issues",
+  "keywords": [
+    "angular",
+    "service",
+    "url",
+    "link",
+    "platform",
+    "detection",
+    "social-media",
+    "linksense"
+  ],
+  "engines": {
+    "node": ">=18"
+  }
 }
