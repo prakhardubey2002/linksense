@@ -1,6 +1,6 @@
 {
   "name": "@linksense/react",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "React hooks for URL platform detection — useLinkSense, useDetectAll, useNormalizeUrl, useExtractFromUrl",
   "type": "module",
   "main": "./dist/index.cjs",
@@ -18,7 +18,11 @@
       }
     }
   },
-  "files": ["dist", "LICENSE", "README.md"],
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ],
   "scripts": {
     "build": "tsup",
     "dev": "tsup --watch",
@@ -26,7 +30,7 @@
     "test": "vitest run"
   },
   "dependencies": {
-    "@linksense/core": "workspace:*"
+    "@linksense/core": "^0.0.1"
   },
   "peerDependencies": {
     "react": ">=18.0.0"

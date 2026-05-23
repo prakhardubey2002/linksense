@@ -47,16 +47,16 @@ importers:
         specifier: '>=16.0.0'
         version: 21.2.14(rxjs@7.8.2)
       '@linksense/core':
-        specifier: workspace:*
-        version: link:../core
+        specifier: ^0.0.1
+        version: 0.0.1
 
   packages/core: {}
 
   packages/preact:
     dependencies:
       '@linksense/core':
-        specifier: workspace:*
-        version: link:../core
+        specifier: ^0.0.1
+        version: 0.0.1
       preact:
         specifier: '>=10.0.0'
         version: 10.29.2
@@ -64,8 +64,8 @@ importers:
   packages/react:
     dependencies:
       '@linksense/core':
-        specifier: workspace:*
-        version: link:../core
+        specifier: ^0.0.1
+        version: 0.0.1
       react:
         specifier: '>=18.0.0'
         version: 19.2.6
@@ -77,8 +77,8 @@ importers:
   packages/vue:
     dependencies:
       '@linksense/core':
-        specifier: workspace:*
-        version: link:../core
+        specifier: ^0.0.1
+        version: 0.0.1
       vue:
         specifier: '>=3.0.0'
         version: 3.5.34(typescript@5.9.3)
@@ -409,6 +409,10 @@ packages:
 
   '@jridgewell/trace-mapping@0.3.31':
     resolution: {integrity: sha512-zzNR+SdQSDJzc8joaeP8QQoCQr8NuYx2dIIytl1QeBEZHJ9uW6hebsrYgbz8hJwUQao3TWCMtmfV8Nu1twOLAw==}
+
+  '@linksense/core@0.0.1':
+    resolution: {integrity: sha512-7572ZNjRAxn5fCqwqRXwBweA68RXx+wANy6Z5FlBC0+1SHh6HLDncYI5fN9mFxNTCJ9Ut2MWVVAEr1BCxquJ/w==}
+    engines: {node: '>=18'}
 
   '@manypkg/find-root@1.1.0':
     resolution: {integrity: sha512-mki5uBvhHzO8kYYix/WRy2WX8S3B5wdVSc9D6KcU5lQNglP2yt58/VfLuAK49glRXChosY8ap2oJ1qgma3GUVA==}
@@ -1960,6 +1964,8 @@ snapshots:
     dependencies:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.5
+
+  '@linksense/core@0.0.1': {}
 
   '@manypkg/find-root@1.1.0':
     dependencies:

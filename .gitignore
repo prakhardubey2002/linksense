@@ -32,3 +32,6 @@ pnpm-debug.log*
 # IDE
 .vscode/settings.json
 .idea
+
+# Local notes (not for repo)
+publish-notes.md

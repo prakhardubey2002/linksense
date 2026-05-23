@@ -1,6 +1,6 @@
 {
   "name": "@linksense/preact",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Preact hooks for URL platform detection — useLinksense, useDetectAll, useNormalizeUrl, useExtractFromUrl",
   "type": "module",
   "main": "./dist/index.cjs",
@@ -18,7 +18,11 @@
       }
     }
   },
-  "files": ["dist", "LICENSE", "README.md"],
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ],
   "scripts": {
     "build": "tsup",
     "dev": "tsup --watch",
@@ -26,7 +30,7 @@
     "test": "vitest run"
   },
   "dependencies": {
-    "@linksense/core": "workspace:*"
+    "@linksense/core": "^0.0.1"
   },
   "peerDependencies": {
     "preact": ">=10.0.0"

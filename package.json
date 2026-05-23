@@ -21,7 +21,9 @@
     "prepare": "husky",
     "changeset": "changeset",
     "version-packages": "changeset version",
-    "release": "turbo run build && changeset publish"
+    "release": "turbo run build && changeset publish",
+    "publish:core": "pnpm --filter @linksense/core publish --access public",
+    "publish:adapters": "pnpm --filter @linksense/react --filter @linksense/preact --filter @linksense/vue --filter @linksense/angular publish --access public"
   },
   "devDependencies": {
     "@changesets/cli": "^2.27.0",
