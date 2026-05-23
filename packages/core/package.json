@@ -1,7 +1,7 @@
 {
   "name": "@linksense/core",
   "version": "0.0.1",
-  "description": "Framework-agnostic link/platform detection engine",
+  "description": "Framework-agnostic link/platform detection engine — detect, normalize, and extract data from 50+ platform URLs",
   "type": "module",
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
@@ -18,7 +18,7 @@
       }
     }
   },
-  "files": ["dist"],
+  "files": ["dist", "LICENSE", "README.md"],
   "scripts": {
     "build": "tsup",
     "dev": "tsup --watch",
@@ -26,5 +26,29 @@
     "test": "vitest run"
   },
   "sideEffects": false,
-  "license": "MIT"
+  "license": "MIT",
+  "author": "Prakhar Dubey <prakhardubey2002>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/prakhardubey2002/linksense.git",
+    "directory": "packages/core"
+  },
+  "homepage": "https://github.com/prakhardubey2002/linksense/tree/main/packages/core#readme",
+  "bugs": "https://github.com/prakhardubey2002/linksense/issues",
+  "keywords": [
+    "url",
+    "link",
+    "platform",
+    "detection",
+    "social-media",
+    "regex",
+    "normalize",
+    "extract",
+    "github",
+    "linkedin",
+    "twitter"
+  ],
+  "engines": {
+    "node": ">=18"
+  }
 }
