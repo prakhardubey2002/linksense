@@ -16,8 +16,8 @@ function run(command, args) {
 console.log("→ Building packages (@linksense/*)…");
 run("pnpm", ["build"]);
 
-console.log("→ Building federation apps (STAGE_FEDERATION=1)…");
-run("pnpm", [
+console.log("→ Building federation apps (production remotes)…");
+const turboArgs = [
   "turbo",
   "run",
   "build",
@@ -25,7 +25,15 @@ run("pnpm", [
   "--filter=preact-linksense",
   "--filter=vue-linksense",
   "--filter=playground",
-]);
+];
+
+// Avoid stale Turbo cache serving a dev build with localhost remotes on Vercel
+if (process.env.VERCEL) {
+  turboArgs.push("--force");
+  console.log("  (VERCEL=1 → turbo --force)");
+}
+
+run("pnpm", turboArgs);
 
 console.log("\n✓ Federation build complete.");
 console.log("  Stage remotes: pnpm stage:federation");

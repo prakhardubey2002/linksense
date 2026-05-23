@@ -2,10 +2,8 @@ import { defineConfig } from "vite";
 import preact from "@preact/preset-vite";
 import { federation } from "@module-federation/vite";
 
-const staged = process.env.STAGE_FEDERATION === "1";
-
-export default defineConfig({
-  base: staged ? "/remotes/preact/" : "/",
+export default defineConfig(({ mode }) => ({
+  base: mode === "development" ? "/" : "/remotes/preact/",
   plugins: [
     preact(),
     federation({
@@ -35,4 +33,4 @@ export default defineConfig({
   optimizeDeps: {
     include: ["@linksense/preact", "@linksense/core"],
   },
-});
+}));

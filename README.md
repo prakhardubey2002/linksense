@@ -5,6 +5,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![npm @linksense/core](https://img.shields.io/npm/v/@linksense/core?label=%40linksense%2Fcore)](https://www.npmjs.com/package/@linksense/core)
 [![Node](https://img.shields.io/node/v/@linksense/core)](https://nodejs.org)
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/prakhardubey2002/linksense)
 
 ## Why LinkSense?
 

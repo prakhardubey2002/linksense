@@ -2,10 +2,8 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import { federation } from "@module-federation/vite";
 
-const staged = process.env.STAGE_FEDERATION === "1";
-
-export default defineConfig({
-  base: staged ? "/remotes/react/" : "/",
+export default defineConfig(({ mode }) => ({
+  base: mode === "development" ? "/" : "/remotes/react/",
   plugins: [
     react(),
     federation({
@@ -36,4 +34,4 @@ export default defineConfig({
   optimizeDeps: {
     include: ["@linksense/react", "@linksense/core"],
   },
-});
+}));
