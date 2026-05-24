@@ -4,6 +4,15 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![npm @linksense/core](https://img.shields.io/npm/v/@linksense/core?label=%40linksense%2Fcore)](https://www.npmjs.com/package/@linksense/core)
+[![npm @linksense/core downloads](https://img.shields.io/npm/dm/@linksense/core?label=%40linksense%2Fcore%20downloads)](https://www.npmjs.com/package/@linksense/core)
+[![npm @linksense/react](https://img.shields.io/npm/v/@linksense/react?label=%40linksense%2Freact)](https://www.npmjs.com/package/@linksense/react)
+[![npm @linksense/react downloads](https://img.shields.io/npm/dm/@linksense/react?label=%40linksense%2Freact%20downloads)](https://www.npmjs.com/package/@linksense/react)
+[![npm @linksense/preact](https://img.shields.io/npm/v/@linksense/preact?label=%40linksense%2Fpreact)](https://www.npmjs.com/package/@linksense/preact)
+[![npm @linksense/preact downloads](https://img.shields.io/npm/dm/@linksense/preact?label=%40linksense%2Fpreact%20downloads)](https://www.npmjs.com/package/@linksense/preact)
+[![npm @linksense/vue](https://img.shields.io/npm/v/@linksense/vue?label=%40linksense%2Fvue)](https://www.npmjs.com/package/@linksense/vue)
+[![npm @linksense/vue downloads](https://img.shields.io/npm/dm/@linksense/vue?label=%40linksense%2Fvue%20downloads)](https://www.npmjs.com/package/@linksense/vue)
+[![npm @linksense/angular](https://img.shields.io/npm/v/@linksense/angular?label=%40linksense%2Fangular)](https://www.npmjs.com/package/@linksense/angular)
+[![npm @linksense/angular downloads](https://img.shields.io/npm/dm/@linksense/angular?label=%40linksense%2Fangular%20downloads)](https://www.npmjs.com/package/@linksense/angular)
 [![Node](https://img.shields.io/node/v/@linksense/core)](https://nodejs.org)
 [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/prakhardubey2002/linksense)
 
@@ -12,9 +21,9 @@
 Paste a URL into your app and you often need more than the hostname: which platform it is, a display title, an icon, normalized parts, and structured fields (username, repo, course slug). LinkSense does that in one pass with **zero runtime dependencies** in the core package and a small, tree-shakeable API.
 
 ```typescript
-import { detect, normalizeUrl, extractFromUrl } from "@linksense/core";
+import { detect, normalizeUrl, extractFromUrl } from '@linksense/core'
 
-detect("https://github.com/torvalds/linux");
+detect('https://github.com/torvalds/linux')
 // {
 //   platform: "github",
 //   title: "GitHub",
@@ -23,10 +32,10 @@ detect("https://github.com/torvalds/linux");
 //   matches: ["torvalds", "linux"]
 // }
 
-normalizeUrl("https://WWW.LinkedIn.Com/in/user/");
+normalizeUrl('https://WWW.LinkedIn.Com/in/user/')
 // { hostname: "linkedin.com", pathname: "/in/user", ... }
 
-extractFromUrl("https://github.com/torvalds/linux?tab=readme");
+extractFromUrl('https://github.com/torvalds/linux?tab=readme')
 // { username: "torvalds", repository: "linux", query: { tab: "readme" } }
 ```
 
@@ -43,13 +52,17 @@ extractFromUrl("https://github.com/torvalds/linux?tab=readme");
 
 ## Packages
 
-| Package | Description | Docs |
-|--------|-------------|------|
-| [`@linksense/core`](https://www.npmjs.com/package/@linksense/core) | Detection engine (no framework) | [README](./packages/core/README.md) |
-| [`@linksense/react`](https://www.npmjs.com/package/@linksense/react) | React hooks | [README](./packages/react/README.md) |
-| [`@linksense/preact`](https://www.npmjs.com/package/@linksense/preact) | Preact hooks | [README](./packages/preact/README.md) |
-| [`@linksense/vue`](https://www.npmjs.com/package/@linksense/vue) | Vue composables | [README](./packages/vue/README.md) |
-| [`@linksense/angular`](https://www.npmjs.com/package/@linksense/angular) | Angular service | [README](./packages/angular/README.md) |
+Published on npm under the `@linksense` scope:
+
+| Package | Version | Downloads / month | Description | Peer dependency | Docs |
+| ------- | ------- | ----------------- | ----------- | --------------- | ---- |
+| [`@linksense/core`](https://www.npmjs.com/package/@linksense/core) | [![npm](https://img.shields.io/npm/v/@linksense/core)](https://www.npmjs.com/package/@linksense/core) | [![downloads](https://img.shields.io/npm/dm/@linksense/core)](https://www.npmjs.com/package/@linksense/core) | Framework-agnostic detection, normalization, and extraction | — | [README](./packages/core/README.md) |
+| [`@linksense/react`](https://www.npmjs.com/package/@linksense/react) | [![npm](https://img.shields.io/npm/v/@linksense/react)](https://www.npmjs.com/package/@linksense/react) | [![downloads](https://img.shields.io/npm/dm/@linksense/react)](https://www.npmjs.com/package/@linksense/react) | `useLinkSense`, `useDetectAll`, `useNormalizeUrl`, `useExtractFromUrl` | `react` ≥18 | [README](./packages/react/README.md) |
+| [`@linksense/preact`](https://www.npmjs.com/package/@linksense/preact) | [![npm](https://img.shields.io/npm/v/@linksense/preact)](https://www.npmjs.com/package/@linksense/preact) | [![downloads](https://img.shields.io/npm/dm/@linksense/preact)](https://www.npmjs.com/package/@linksense/preact) | Same hook API as React, for Preact | `preact` ≥10 | [README](./packages/preact/README.md) |
+| [`@linksense/vue`](https://www.npmjs.com/package/@linksense/vue) | [![npm](https://img.shields.io/npm/v/@linksense/vue)](https://www.npmjs.com/package/@linksense/vue) | [![downloads](https://img.shields.io/npm/dm/@linksense/vue)](https://www.npmjs.com/package/@linksense/vue) | `useLinkSense` and related Vue 3 composables | `vue` ≥3 | [README](./packages/vue/README.md) |
+| [`@linksense/angular`](https://www.npmjs.com/package/@linksense/angular) | [![npm](https://img.shields.io/npm/v/@linksense/angular)](https://www.npmjs.com/package/@linksense/angular) | [![downloads](https://img.shields.io/npm/dm/@linksense/angular)](https://www.npmjs.com/package/@linksense/angular) | Injectable `LinkSenseService` | `@angular/core` ≥16 | [README](./packages/angular/README.md) |
+
+All framework adapters depend on `@linksense/core` and re-export its functions and types.
 
 ### Install
 
@@ -67,21 +80,21 @@ npm install @linksense/angular @angular/core
 ### React example
 
 ```tsx
-import { Icon } from "@iconify/react";
-import { useLinkSense } from "@linksense/react";
+import { Icon } from '@iconify/react'
+import { useLinkSense } from '@linksense/react'
 
 function LinkPreview({ url }: { url: string }) {
-  const { result, isDetected } = useLinkSense(url, { extract: true });
+  const { result, isDetected } = useLinkSense(url, { extract: true })
 
-  if (!isDetected || !result) return <p>Unknown link</p>;
+  if (!isDetected || !result) return <p>Unknown link</p>
 
   return (
     <div>
       <Icon icon={result.icon} width={24} />
       <strong>{result.title}</strong>
-      <span>{result.matches.join(" · ")}</span>
+      <span>{result.matches.join(' · ')}</span>
     </div>
-  );
+  )
 }
 ```
 
@@ -134,11 +147,11 @@ Run all framework demos in parallel:
 pnpm dev:demos
 ```
 
-| App | URL |
-|-----|-----|
-| React | http://localhost:5173 |
+| App    | URL                   |
+| ------ | --------------------- |
+| React  | http://localhost:5173 |
 | Preact | http://localhost:5174 |
-| Vue | http://localhost:5175 |
+| Vue    | http://localhost:5175 |
 
 ### Module Federation playground
 
@@ -153,13 +166,13 @@ All four dev servers must use their default ports (5170–5175). If you see **po
 
 ### Other scripts
 
-| Script | Description |
-|--------|-------------|
-| `pnpm lint` | Lint all packages |
-| `pnpm format` | Format with Prettier |
-| `pnpm validate:platforms` | Validate `platforms.json` |
-| `pnpm changeset` | Create a changeset for release |
-| `pnpm release` | Build and publish (maintainers) |
+| Script                    | Description                     |
+| ------------------------- | ------------------------------- |
+| `pnpm lint`               | Lint all packages               |
+| `pnpm format`             | Format with Prettier            |
+| `pnpm validate:platforms` | Validate `platforms.json`       |
+| `pnpm changeset`          | Create a changeset for release  |
+| `pnpm release`            | Build and publish (maintainers) |
 
 ## Contributing
 
