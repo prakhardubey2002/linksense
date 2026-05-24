@@ -1,6 +1,6 @@
 {
   "name": "@linksense/core",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Framework-agnostic link/platform detection engine — detect, normalize, and extract data from 50+ platform URLs",
   "type": "module",
   "main": "./dist/index.cjs",
@@ -18,7 +18,11 @@
       }
     }
   },
-  "files": ["dist", "LICENSE", "README.md"],
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ],
   "scripts": {
     "build": "tsup",
     "dev": "tsup --watch",

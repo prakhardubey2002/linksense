@@ -1,6 +1,6 @@
 {
   "name": "@linksense/react",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "React hooks for URL platform detection — useLinkSense, useDetectAll, useNormalizeUrl, useExtractFromUrl",
   "type": "module",
   "main": "./dist/index.cjs",
@@ -30,7 +30,7 @@
     "test": "vitest run"
   },
   "dependencies": {
-    "@linksense/core": "^0.0.1"
+    "@linksense/core": "^0.1.0"
   },
   "peerDependencies": {
     "react": ">=18.0.0"

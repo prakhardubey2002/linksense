@@ -342,6 +342,72 @@
     "icon": "simple-icons:sap"
   },
   {
+    "name": "vk",
+    "regex": "(?:https?:\\/\\/)?(?:www\\.|m\\.)?vk\\.com\\/([a-zA-Z0-9_.]+)(?:\\/)?",
+    "title": "VK",
+    "icon": "simple-icons:vk"
+  },
+  {
+    "name": "weibo",
+    "regex": "(?:https?:\\/\\/)?(?:www\\.|m\\.)?weibo\\.com\\/(?:u\\/|n\\/)?([a-zA-Z0-9_]+)(?:\\/)?",
+    "title": "Weibo",
+    "icon": "simple-icons:sinaweibo"
+  },
+  {
+    "name": "bilibili",
+    "regex": "(?:https?:\\/\\/)?(?:www\\.)?(?:space\\.)?bilibili\\.com\\/(?:[0-9]+|video\\/[a-zA-Z0-9]+)(?:\\/[a-zA-Z0-9_-]+)*(?:\\/)?",
+    "title": "Bilibili",
+    "icon": "simple-icons:bilibili"
+  },
+  {
+    "name": "xiaohongshu",
+    "regex": "(?:https?:\\/\\/)?(?:www\\.)?(?:xiaohongshu\\.com|xhslink\\.com)\\/(?:user\\/profile\\/|explore\\/|discovery\\/item\\/)?([a-zA-Z0-9]+)(?:\\/)?",
+    "title": "Xiaohongshu",
+    "icon": "simple-icons:xiaohongshu"
+  },
+  {
+    "name": "naver",
+    "regex": "(?:https?:\\/\\/)?(?:www\\.|m\\.)?(?:blog\\.naver\\.com|cafe\\.naver\\.com)\\/([a-zA-Z0-9_-]+)(?:\\/[a-zA-Z0-9_-]+)*(?:\\/)?",
+    "title": "Naver",
+    "icon": "simple-icons:naver"
+  },
+  {
+    "name": "zenn",
+    "regex": "(?:https?:\\/\\/)?(?:www\\.)?zenn\\.dev\\/([a-zA-Z0-9_-]+)(?:\\/)?",
+    "title": "Zenn",
+    "icon": "simple-icons:zenn"
+  },
+  {
+    "name": "qiita",
+    "regex": "(?:https?:\\/\\/)?(?:www\\.)?qiita\\.com\\/([a-zA-Z0-9_-]+)(?:\\/)?",
+    "title": "Qiita",
+    "icon": "simple-icons:qiita"
+  },
+  {
+    "name": "ens",
+    "regex": "(?:https?:\\/\\/)?(?:www\\.)?(?:app\\.)?ens\\.domains\\/(?:[a-zA-Z0-9-]+\\.eth|[a-zA-Z0-9-]+)(?:\\/)?",
+    "title": "ENS",
+    "icon": "token-branded:ens"
+  },
+  {
+    "name": "lens",
+    "regex": "(?:https?:\\/\\/)?(?:www\\.)?(?:hey\\.xyz|lenster\\.xyz|lens\\.xyz)\\/(?:u\\/)?([a-zA-Z0-9_.-]+)(?:\\/)?",
+    "title": "Lens",
+    "icon": "simple-icons:lensprotocol"
+  },
+  {
+    "name": "farcaster",
+    "regex": "(?:https?:\\/\\/)?(?:www\\.)?farcaster\\.xyz\\/(?:~\\/)?([a-zA-Z0-9_.-]+)(?:\\/)?",
+    "title": "Farcaster",
+    "icon": "simple-icons:farcaster"
+  },
+  {
+    "name": "warpcast",
+    "regex": "(?:https?:\\/\\/)?(?:www\\.)?warpcast\\.com\\/(?:~\\/)?([a-zA-Z0-9_.-]+)(?:\\/)?",
+    "title": "Warpcast",
+    "icon": "simple-icons:farcaster"
+  },
+  {
     "name": "portfolio",
     "regex": "(?:https?:\\/\\/)?(?:www\\.)?([a-zA-Z0-9-]+\\.(?:me|tech|dev|io|app|site|website|squarespace\\.com|notion\\.site|tilda\\.cc|read\\.cv|hashnode\\.dev|dev\\.to|wixsite\\.com))(?:\\/)?",
     "title": "Portfolio",
