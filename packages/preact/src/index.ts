@@ -7,10 +7,16 @@ export type { UseDetectAllResult } from "./use-detect-all";
 export { useNormalizeUrl } from "./use-normalize-url";
 export { useExtractFromUrl } from "./use-extract-from-url";
 
+export { useDetectWithAI } from "./use-detect-with-ai";
+export { useDetectBatchWithAI } from "./use-detect-batch-with-ai";
+
 export {
   detect,
   detectAll,
   detectBatch,
+  detectWithAI,
+  detectBatchWithAI,
+  canUseAiDetection,
   getPlatforms,
   normalizeUrl,
   extractFromUrl,
@@ -25,4 +31,7 @@ export type {
   NormalizedUrl,
   ExtractedData,
   PlatformEntry,
+  AiDetectOptions,
+  OpenRouterConfig,
+  AiDetectionPayload,
 } from "@linksense/core";

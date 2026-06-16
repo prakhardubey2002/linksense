@@ -18,6 +18,14 @@ describe("@linksense/preact exports", () => {
     expect(typeof preactPkg.useExtractFromUrl).toBe("function");
   });
 
+  it("exports useDetectWithAI hook", () => {
+    expect(typeof preactPkg.useDetectWithAI).toBe("function");
+  });
+
+  it("exports useDetectBatchWithAI hook", () => {
+    expect(typeof preactPkg.useDetectBatchWithAI).toBe("function");
+  });
+
   it("re-exports core detect function", () => {
     expect(typeof preactPkg.detect).toBe("function");
   });
@@ -28,6 +36,18 @@ describe("@linksense/preact exports", () => {
 
   it("re-exports core detectBatch function", () => {
     expect(typeof preactPkg.detectBatch).toBe("function");
+  });
+
+  it("re-exports core detectWithAI function", () => {
+    expect(typeof preactPkg.detectWithAI).toBe("function");
+  });
+
+  it("re-exports core detectBatchWithAI function", () => {
+    expect(typeof preactPkg.detectBatchWithAI).toBe("function");
+  });
+
+  it("re-exports core canUseAiDetection function", () => {
+    expect(typeof preactPkg.canUseAiDetection).toBe("function");
   });
 
   it("re-exports core getPlatforms function", () => {

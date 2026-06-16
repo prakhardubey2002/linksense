@@ -1,5 +1,13 @@
 # preact-linksense
 
+## 0.0.2
+
+### Patch Changes
+
+- Updated dependencies
+  - @linksense/preact@1.0.0
+  - @linksense/core@1.0.0
+
 ## 0.0.1
 
 ### Patch Changes

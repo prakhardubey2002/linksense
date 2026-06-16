@@ -1,5 +1,13 @@
 # vue-linksense
 
+## 0.0.2
+
+### Patch Changes
+
+- Updated dependencies
+  - @linksense/core@1.0.0
+  - @linksense/vue@1.0.0
+
 ## 0.0.1
 
 ### Patch Changes

@@ -18,6 +18,14 @@ describe("@linksense/react exports", () => {
     expect(typeof reactPkg.useExtractFromUrl).toBe("function");
   });
 
+  it("exports useDetectWithAI hook", () => {
+    expect(typeof reactPkg.useDetectWithAI).toBe("function");
+  });
+
+  it("exports useDetectBatchWithAI hook", () => {
+    expect(typeof reactPkg.useDetectBatchWithAI).toBe("function");
+  });
+
   it("re-exports core detect function", () => {
     expect(typeof reactPkg.detect).toBe("function");
   });
@@ -28,6 +36,18 @@ describe("@linksense/react exports", () => {
 
   it("re-exports core detectBatch function", () => {
     expect(typeof reactPkg.detectBatch).toBe("function");
+  });
+
+  it("re-exports core detectWithAI function", () => {
+    expect(typeof reactPkg.detectWithAI).toBe("function");
+  });
+
+  it("re-exports core detectBatchWithAI function", () => {
+    expect(typeof reactPkg.detectBatchWithAI).toBe("function");
+  });
+
+  it("re-exports core canUseAiDetection function", () => {
+    expect(typeof reactPkg.canUseAiDetection).toBe("function");
   });
 
   it("re-exports core getPlatforms function", () => {

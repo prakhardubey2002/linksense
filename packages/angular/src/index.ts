@@ -4,6 +4,9 @@ export {
   detect,
   detectAll,
   detectBatch,
+  detectWithAI,
+  detectBatchWithAI,
+  canUseAiDetection,
   getPlatforms,
   normalizeUrl,
   extractFromUrl,
@@ -18,4 +21,7 @@ export type {
   NormalizedUrl,
   ExtractedData,
   PlatformEntry,
+  AiDetectOptions,
+  OpenRouterConfig,
+  AiDetectionPayload,
 } from "@linksense/core";

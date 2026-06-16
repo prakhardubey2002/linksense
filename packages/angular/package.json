@@ -1,6 +1,6 @@
 {
   "name": "@linksense/angular",
-  "version": "0.1.1",
+  "version": "1.0.0",
   "description": "Angular service for URL platform detection — LinkSenseService powered by @linksense/core",
   "type": "module",
   "main": "./dist/index.cjs",
@@ -30,7 +30,7 @@
     "test": "vitest run"
   },
   "dependencies": {
-    "@linksense/core": "^0.1.0"
+    "@linksense/core": "workspace:*"
   },
   "peerDependencies": {
     "@angular/core": ">=16.0.0"

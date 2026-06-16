@@ -1,10 +1,10 @@
 {
   "latestErrorEvent": {
     "code": "TYPE-001",
-    "message": "Failed to generate type declaration. Execute the below cmd to reproduce and fix the error. #TYPE-001\nargs: {\"cmd\":\"npx tsc --project \\\"C:\\\\\\\\Personal SAAS and Projects\\\\\\\\linksense\\\\\\\\apps\\\\\\\\linksense-react\\\\\\\\node_modules\\\\\\\\.federation\\\\\\\\tsconfig.3914bd971388b478403ef407390aa2fa.json\\\"\"}\nView the docs to see how to solve: https://module-federation.io/guide/troubleshooting/type#type-001",
+    "message": "Failed to generate type declaration. Execute the below cmd to reproduce and fix the error. #TYPE-001\nargs: {\"cmd\":\"npx tsc --project \\\"C:\\\\\\\\Personal SAAS and Projects\\\\\\\\linksense\\\\\\\\apps\\\\\\\\linksense-react\\\\\\\\node_modules\\\\\\\\.federation\\\\\\\\tsconfig.985f0055fa53e6bc9cca49416e1a1ef2.json\\\"\"}\nView the docs to see how to solve: https://module-federation.io/guide/troubleshooting/type#type-001",
     "args": {
-      "cmd": "npx tsc --project \"C:\\\\Personal SAAS and Projects\\\\linksense\\\\apps\\\\linksense-react\\\\node_modules\\\\.federation\\\\tsconfig.3914bd971388b478403ef407390aa2fa.json\""
+      "cmd": "npx tsc --project \"C:\\\\Personal SAAS and Projects\\\\linksense\\\\apps\\\\linksense-react\\\\node_modules\\\\.federation\\\\tsconfig.985f0055fa53e6bc9cca49416e1a1ef2.json\""
     },
-    "timestamp": 1779616892004
+    "timestamp": 1781614631440
   }
 }

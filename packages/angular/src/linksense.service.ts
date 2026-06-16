@@ -3,6 +3,9 @@ import {
   detect,
   detectAll,
   detectBatch,
+  detectWithAI,
+  detectBatchWithAI,
+  canUseAiDetection,
   getPlatforms,
   normalizeUrl,
   extractFromUrl,
@@ -16,6 +19,7 @@ import type {
   NormalizedUrl,
   ExtractedData,
   PlatformEntry,
+  AiDetectOptions,
 } from "@linksense/core";
 
 @Injectable({
@@ -32,6 +36,21 @@ export class LinkSenseService {
 
   detectBatch(urls: string[]): Map<string, DetectResult | null> {
     return detectBatch(urls);
+  }
+
+  detectWithAI(url: string, options?: AiDetectOptions): Promise<DetectResult | null> {
+    return detectWithAI(url, options);
+  }
+
+  detectBatchWithAI(
+    urls: string[],
+    options?: AiDetectOptions,
+  ): Promise<Map<string, DetectResult | null>> {
+    return detectBatchWithAI(urls, options);
+  }
+
+  canUseAiDetection(options?: Pick<AiDetectOptions, "apiKey" | "model">): boolean {
+    return canUseAiDetection(options);
   }
 
   getPlatforms(): PlatformEntry[] {

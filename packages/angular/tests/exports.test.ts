@@ -10,6 +10,9 @@ describe("@linksense/angular exports", () => {
     expect(typeof angularPkg.detect).toBe("function");
     expect(typeof angularPkg.detectAll).toBe("function");
     expect(typeof angularPkg.detectBatch).toBe("function");
+    expect(typeof angularPkg.detectWithAI).toBe("function");
+    expect(typeof angularPkg.detectBatchWithAI).toBe("function");
+    expect(typeof angularPkg.canUseAiDetection).toBe("function");
     expect(typeof angularPkg.getPlatforms).toBe("function");
     expect(typeof angularPkg.isValidUrl).toBe("function");
   });
