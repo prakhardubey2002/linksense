@@ -408,6 +408,114 @@
     "icon": "simple-icons:farcaster"
   },
   {
+    "name": "playStore",
+    "regex": "(?:https?:\\/\\/)?(?:www\\.)?(?:play\\.google\\.com\\/store\\/apps\\/details\\?(?:[^\\s&]*&)*id=([a-zA-Z0-9._]+)|market\\.android\\.com\\/details\\?(?:[^\\s&]*&)*id=([a-zA-Z0-9._]+))(?:&[^\\s]*)?",
+    "title": "Google Play Store",
+    "icon": "simple-icons:googleplay"
+  },
+  {
+    "name": "appleAppStore",
+    "regex": "(?:https?:\\/\\/)?(?:www\\.)?(?:apps|itunes)\\.apple\\.com\\/(?:[a-z]{2}\\/)?app\\/(?:[a-zA-Z0-9._-]+\\/)?id([0-9]+)(?:\\?[^\\s]*)?(?:\\/)?",
+    "title": "Apple App Store",
+    "icon": "simple-icons:appstore"
+  },
+  {
+    "name": "xiaomiGetApps",
+    "regex": "(?:https?:\\/\\/)?(?:(?:global|c)\\.)?(?:app\\.mi\\.com|app\\.xiaomi\\.com)\\/(?:details|detail)(?:\\.html)?(?:\\?(?:[^\\s&]*&)*id=([a-zA-Z0-9._]+)(?:&[^\\s]*)?|\\/([a-zA-Z0-9._-]+))(?:\\/)?",
+    "title": "Xiaomi GetApps",
+    "icon": "simple-icons:xiaomi"
+  },
+  {
+    "name": "oppoStore",
+    "regex": "(?:https?:\\/\\/)?(?:www\\.)?(?:(?:appc?|i|play|store)\\.(?:heytap|oppomobile)\\.com|store\\.oppo\\.com|app\\.cdo\\.oppomobile\\.com)(?:\\/[^\\s]*)?",
+    "title": "Oppo Software Store",
+    "icon": "simple-icons:oppo"
+  },
+  {
+    "name": "vivoAppStore",
+    "regex": "(?:https?:\\/\\/)?(?:(?:h5|h5coml|info)\\.)?(?:appstore\\.vivo\\.com(?:\\.cn)?(?:\\/[^\\s]*)?|h5coml\\.vivo\\.com\\.cn\\/h5coml\\/appdetail[^\\s]*|(?:www\\.)?vivo\\.com(?:\\.[a-z]{2})?\\/(?:[a-z]{2}\\/)?appstore(?:\\/[^\\s]*)?)",
+    "title": "Vivo App Store",
+    "icon": "simple-icons:vivo"
+  },
+  {
+    "name": "samsungGalaxyStore",
+    "regex": "(?:https?:\\/\\/)?(?:www\\.)?(?:galaxystore\\.samsung\\.com\\/detail\\/([a-zA-Z0-9._]+)|galaxy\\.store\\/[^\\s]*|(?:apps\\.samsung\\.com|samsungapps\\.com)\\/appquery\\/appDetail\\.as\\?(?:[^\\s&]*&)*appId=([a-zA-Z0-9._]+))",
+    "title": "Samsung Galaxy Store",
+    "icon": "simple-icons:samsung"
+  },
+  {
+    "name": "huaweiAppGallery",
+    "regex": "(?:https?:\\/\\/)?(?:www\\.)?appgallery(?:\\.cloud)?\\.huawei\\.com(?:\\/#)?\\/(?:app\\/C?[0-9A-Za-z]+|appDetail\\?(?:[^\\s&]*&)*appId=C?[0-9A-Za-z]+)(?:[^\\s]*)?",
+    "title": "Huawei AppGallery",
+    "icon": "simple-icons:huawei"
+  },
+  {
+    "name": "amazonAppstore",
+    "regex": "(?:https?:\\/\\/)?(?:www\\.)?(?:amazon\\.[a-z.]+\\/gp\\/mas\\/dl\\/android\\?(?:[^\\s&]*&)*p=([a-zA-Z0-9._]+)|apps\\.amazon\\.com(?:\\/[^\\s]*)?)",
+    "title": "Amazon Appstore",
+    "icon": "simple-icons:amazon"
+  },
+  {
+    "name": "indusAppStore",
+    "regex": "(?:https?:\\/\\/)(?:www\\.)?indusappstore\\.com(?:\\/(?:apps|app)\\/[^\\s]*)?",
+    "title": "Indus App Store",
+    "icon": "arcticons:indus-appstore"
+  },
+  {
+    "name": "uptodown",
+    "regex": "(?:https?:\\/\\/)?(?:www\\.)?(?:[a-z0-9-]+\\.)?(?:[a-z]{2}\\.)?uptodown\\.com(?:\\/(?:android|ios|windows|mac)(?:\\/[^\\s]*)?)?",
+    "title": "Uptodown",
+    "icon": "arcticons:uptodown-app-store"
+  },
+  {
+    "name": "expo",
+    "regex": "(?:https?:\\/\\/)(?:www\\.)?(?:(?:u\\.)?expo\\.dev|snack\\.expo\\.(?:dev|io)|exp\\.host)(?:\\/[^\\s]*)?",
+    "title": "Expo",
+    "icon": "simple-icons:expo"
+  },
+  {
+    "name": "wix",
+    "regex": "(?:https?:\\/\\/)(?:(?:[a-zA-Z0-9-]+\\.)?wixsite\\.com|(?:www\\.)?wix\\.to)(?:\\/[^\\s]*)?",
+    "title": "Wix",
+    "icon": "simple-icons:wix"
+  },
+  {
+    "name": "forceCom",
+    "regex": "(?:https?:\\/\\/)(?:[a-zA-Z0-9-]+\\.)+(?:force\\.com|my\\.salesforce\\.com)(?:\\/[^\\s]*)?",
+    "title": "Salesforce",
+    "icon": "simple-icons:salesforce"
+  },
+  {
+    "name": "pega",
+    "regex": "(?:https?:\\/\\/)(?:(?:www|community|academy|docs)\\.)?pega(?:systems)?\\.com(?:\\/[^\\s]*)?",
+    "title": "Pega",
+    "icon": "lucide:workflow"
+  },
+  {
+    "name": "ptcWindchill",
+    "regex": "(?:https?:\\/\\/)(?:(?:www|support|community)\\.)?ptc\\.com(?:\\/[^\\s]*)?",
+    "title": "PTC Windchill",
+    "icon": "lucide:cog"
+  },
+  {
+    "name": "siemensTeamcenter",
+    "regex": "(?:https?:\\/\\/)(?:(?:www|community)\\.)?(?:plm\\.automation\\.siemens\\.com|sw\\.siemens\\.com)(?:\\/[^\\s]*)?|(?:https?:\\/\\/)(?:www\\.)?siemens\\.com\\/[^\\s]*teamcenter[^\\s]*",
+    "title": "Siemens Teamcenter",
+    "icon": "simple-icons:siemens"
+  },
+  {
+    "name": "dassault3dexperience",
+    "regex": "(?:https?:\\/\\/)(?:www\\.)?3ds\\.com\\/[^\\s]*(?:3dexperience|enovia)[^\\s]*|(?:https?:\\/\\/)(?:[a-zA-Z0-9-]+\\.)?3dexperience\\.3ds\\.com(?:\\/[^\\s]*)?",
+    "title": "3DEXPERIENCE",
+    "icon": "simple-icons:dassaultsystemes"
+  },
+  {
+    "name": "frappe",
+    "regex": "(?:https?:\\/\\/)(?:(?:www|docs|discuss)\\.)?frappe\\.io(?:\\/[^\\s]*)?|(?:https?:\\/\\/)(?:www\\.)?frappeframework\\.com(?:\\/[^\\s]*)?|(?:https?:\\/\\/)(?:[a-zA-Z0-9-]+\\.)?(?:erpnext\\.com|frappe\\.cloud)(?:\\/[^\\s]*)?",
+    "title": "Frappe",
+    "icon": "simple-icons:frappe"
+  },
+  {
     "name": "portfolio",
     "regex": "(?:https?:\\/\\/)?(?:www\\.)?([a-zA-Z0-9-]+\\.(?:me|tech|dev|io|app|site|website|squarespace\\.com|notion\\.site|tilda\\.cc|read\\.cv|hashnode\\.dev|dev\\.to|wixsite\\.com))(?:\\/)?",
     "title": "Portfolio",
