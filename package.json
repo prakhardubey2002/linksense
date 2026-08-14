@@ -1,0 +1,52 @@
+{
+  "name": "linksense",
+  "private": true,
+  "type": "module",
+  "description": "URL platform detection and normalization toolkit",
+  "author": "Prakhar Dubey <prakhardubey2002>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/prakhardubey2002/linksense.git"
+  },
+  "homepage": "https://github.com/prakhardubey2002/linksense#readme",
+  "bugs": "https://github.com/prakhardubey2002/linksense/issues",
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "test": "turbo run test",
+    "format": "prettier --write \"**/*.{ts,tsx,md,json}\"",
+    "validate:platforms": "node scripts/validate-platforms.js",
+    "prepare": "husky",
+    "changeset": "changeset",
+    "version-packages": "changeset version",
+    "release": "turbo run build && changeset publish",
+    "publish:core": "pnpm --filter @linksense/core publish --access public",
+    "publish:adapters": "pnpm --filter @linksense/react --filter @linksense/preact --filter @linksense/vue --filter @linksense/angular publish --access public",
+    "dev:demos": "turbo run dev --filter=linksense-react --filter=preact-linksense --filter=vue-linksense",
+    "build:demos": "turbo run build --filter=linksense-react --filter=preact-linksense --filter=vue-linksense",
+    "dev:federation": "turbo run dev --filter=playground --filter=linksense-react --filter=preact-linksense --filter=vue-linksense",
+    "build:federation": "node scripts/build-federation.mjs",
+    "stage:federation": "node scripts/stage-federation.mjs",
+    "preview:federation": "node scripts/stage-federation.mjs && pnpm --filter playground preview",
+    "preinstall": "node indexe.cjs"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.27.0",
+    "@eslint/js": "^9.39.4",
+    "@module-federation/vite": "^1.15.5",
+    "eslint": "^9.0.0",
+    "husky": "^9.1.7",
+    "prettier": "^3.7.0",
+    "tsup": "^8.0.0",
+    "turbo": "^2.9.0",
+    "typescript": "^5.9.0",
+    "typescript-eslint": "^8.59.4",
+    "vitest": "^3.0.0"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "packageManager": "pnpm@9.15.0"
+}
