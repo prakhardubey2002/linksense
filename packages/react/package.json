@@ -1,6 +1,6 @@
 {
   "name": "@linksense/react",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React hooks for URL platform detection — useLinkSense, useDetectAll, useNormalizeUrl, useExtractFromUrl",
   "type": "module",
   "main": "./dist/index.cjs",

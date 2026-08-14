@@ -1,6 +1,6 @@
 {
   "name": "@linksense/angular",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Angular service for URL platform detection — LinkSenseService powered by @linksense/core",
   "type": "module",
   "main": "./dist/index.cjs",

@@ -1,5 +1,11 @@
 # @linksense/core
 
+## 1.1.0
+
+### Minor Changes
+
+- links updates
+
 ## 1.0.0
 
 ### Major Changes

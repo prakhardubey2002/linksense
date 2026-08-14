@@ -1,5 +1,13 @@
 # linksense-react
 
+## 0.0.3
+
+### Patch Changes
+
+- Updated dependencies
+  - @linksense/core@1.1.0
+  - @linksense/react@1.0.1
+
 ## 0.0.2
 
 ### Patch Changes

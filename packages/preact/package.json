@@ -1,6 +1,6 @@
 {
   "name": "@linksense/preact",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Preact hooks for URL platform detection — useLinksense, useDetectAll, useNormalizeUrl, useExtractFromUrl",
   "type": "module",
   "main": "./dist/index.cjs",
